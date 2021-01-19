@@ -1,0 +1,156 @@
+
+/*font*/
+@font-face{
+    font-family: Salvar;
+    src: url(SalvarRegular-gxwoP.ttf);
+}
+@font-face{
+    font-family: Modern;
+    src: url(Random14-WyWwG.otf);
+}
+@font-face{
+    font-family: AstroSpace;
+    src: url(AstroSpace-eZ2Bg.ttf);
+}
+
+/*col*/
+.col-1-2{
+    width: 50%;
+    float: left;
+}
+.content::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*button*/
+button {
+    margin: 0 auto;
+    display: block;
+}
+button{
+    background-color:  rgb(157, 162, 171);
+    border: none;
+    color: rgb(71, 70, 71);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*Background color*/
+section.blank{
+    background: rgb(102, 16, 242);
+}
+
+/*text decoration*/
+h1{
+    text-align: center;
+    color: rgb(157, 162, 171);
+    text-decoration: none;
+    font-family: "AstroSpace", serif; 
+}
+p{
+    text-align: center;
+    color: rgb(157, 162, 171);
+    text-decoration: none;
+    font-family: "AstroSpace", serif;
+}
+a{
+    text-align: center;
+    color: rgb(157, 162, 171);
+    text-decoration: none;
+    font-family: "AstroSpace", serif;
+    font-size: 20px;
+}
+address{
+    text-align: center;
+    color: rgb(157, 162, 171);
+    text-decoration: none;
+    font-family: "AstroSpace", serif;
+}
+.home{
+    font-size: 30px;
+}
+.increase{
+    font-size: 20px;
+}
+.sp{
+    font-size: 25px;
+}
+
+/*border*/
+#border{
+    border: solid rgb(120, 255, 214) 2px;
+    height: 315px;
+}
+
+
+/*Nav bar go horizontal*/
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(71, 70, 71);
+}
+
+.nav ul {
+    list-style: none;
+    background-color: rgb(71, 70, 71);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid rgb(157, 162, 171);
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(157, 162, 171);
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: rgb(120, 255, 214);
+}
+
+.nav a.active {
+    background-color: rgb(157, 162, 171);
+    color: rgb(71, 70, 71);
+    cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
+
+    .nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+}
+
+/*img*/
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    background-color: rgb(102, 16, 242);
+}
