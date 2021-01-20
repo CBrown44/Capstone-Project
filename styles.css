@@ -1,4 +1,68 @@
 
+/*Nav bar go horizontal*/
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(71, 70, 71);
+}
+
+.nav ul {
+    list-style: none;
+    background-color: rgb(71, 70, 71);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid rgb(157, 162, 171);
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(157, 162, 171);
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: rgb(120, 255, 214);
+}
+
+.nav a.active {
+    background-color: rgb(157, 162, 171);
+    color: rgb(71, 70, 71);
+    cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
+
+    .nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+}
+
+/*img*/
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    background-color: rgb(102, 16, 242);
+}
+
+
 /*font*/
 @font-face{
     font-family: Salvar;
@@ -197,59 +261,7 @@ a.button {
     text-align: center;
 }
 
-/*Nav bar go horizontal*/
-body {
-    margin: 0;
-    padding: 0;
-    background: rgb(71, 70, 71);
-}
 
-.nav ul {
-    list-style: none;
-    background-color: rgb(71, 70, 71);
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-.nav li {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
-    line-height: 40px;
-    height: 40px;
-    border-bottom: 1px solid rgb(157, 162, 171);
-}
-
-.nav a {
-    text-decoration: none;
-    color: rgb(157, 162, 171);
-    display: block;
-    transition: .3s background-color;
-}
-
-.nav a:hover {
-    background-color: rgb(120, 255, 214);
-}
-
-.nav a.active {
-    background-color: rgb(157, 162, 171);
-    color: rgb(71, 70, 71);
-    cursor: default;
-}
-
-@media screen and (min-width: 600px) {
-    .nav li {
-        width: 120px;
-        border-bottom: none;
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.4em;
-    }
-
-    .nav li {
-        display: inline-block;
-        margin-right: -4px;
-    }
-}
 
 /*img*/
 .logo{
